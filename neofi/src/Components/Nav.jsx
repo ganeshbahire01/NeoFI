@@ -24,10 +24,16 @@ import {
   MoonIcon,
   SunIcon,
 } from "@chakra-ui/icons";
+import { useEffect } from "react";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+  useEffect(() => {
+    if (colorMode === "light") {
+      toggleColorMode();
+    }
+  }, []);
   return (
     <Box>
       <Flex
