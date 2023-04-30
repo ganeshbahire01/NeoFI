@@ -18,5 +18,6 @@
 ## 🚀 How To Use Repo
 - Clone The Repo - git clone [Repo Link]
 - Change Direcory to - neofi
+- install Dependecies - npm i
 - Start Server - npm start
 <br />
